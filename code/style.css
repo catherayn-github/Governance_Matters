@@ -33,6 +33,10 @@ img {
 
   }
 
+  #mobile-menu li a{
+    
+  }
+
   /* Media query for small screens */
 @media screen and (max-width: 600px) {
   /* Hide the text on smaller screens */
