@@ -130,6 +130,18 @@
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll("#mobile-menu li a");
+  const currentPage = window.location.pathname;
+
+  menuItems.forEach(item => {
+    if (item.getAttribute("href") === currentPage) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+});
     document.addEventListener('DOMContentLoaded', function() {
       var elems = document.querySelectorAll('.sidenav');
       var instances = M.Sidenav.init(elems);

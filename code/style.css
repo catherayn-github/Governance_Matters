@@ -34,7 +34,23 @@ img {
   }
 
   #mobile-menu li a{
-    
+    font-weight: 400;
+    color: #757575;
+  }
+  #mobile-menu li a.active{
+    font-weight: 600;
+    color: #ff0000 !important;
+  }
+
+  #mobile-menu li a.active, 
+  #mobile-menu li a:focus, 
+  #mobile-menu li a:active,
+  #mobile-menu li a:hover{
+    font-weight: 600 ; /* Make it bold */
+    color: #ffffff; /* Text color for selected item */
+    background: #ff0000 !important; /* Background color for selected item */
+    border-radius: 5px; /* Optional styling */
+    transition: background-color 0.3s ease; /* Smooth transition */
   }
 
   /* Media query for small screens */
@@ -154,7 +170,7 @@ img {
 }
 /* Adjust the top margin of the sidenav */
 .sidenav {
-  margin-top: 54px; /* Adjust this value to match your navbar height */
+  margin-top: 64px; /* Adjust this value to match your navbar height */
 }
 
 /* Hamburger Menu Button */
