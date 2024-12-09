@@ -33,6 +33,21 @@ img {
 
   }
 
+  @media screen and (max-width: 768px) { /* For tablets and smaller */
+    .hero-content h1 {
+      font-size: 1.5rem;
+      line-height: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) { /* For phones */
+    .hero-content h1 {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      padding: 20px !important;
+    }
+  }
+
   .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
@@ -76,6 +91,62 @@ img {
    font-weight: bolder;
    background-color:  #ff0000ca;
   }
+
+  /* Responsive Styles */
+@media screen and (max-width: 768px) { /* Tablets and smaller devices */
+  .transparent-navbar .brand-logo {
+    font-size: 1.2rem; /* Reduce font size for logo */
+  }
+
+  .transparent-navbar ul {
+    display: none; /* Hide menu items by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 0, 0, 0.8); /* Make dropdown background opaque */
+    width: 100%; /* Full-width dropdown */
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  .transparent-navbar ul li {
+    margin: 10px 0; /* Add space between dropdown items */
+    text-align: center;
+  }
+
+  .transparent-navbar.active ul {
+    display: flex; /* Show menu when active */
+  }
+}
+
+@media screen and (max-width: 480px) { /* Phones */
+  .transparent-navbar .brand-logo {
+    font-size: 1rem; /* Further reduce logo size */
+  }
+
+  .transparent-navbar ul li a {
+    font-size: 0.9rem; /* Adjust menu font size for smaller screens */
+    padding: 8px 10px;
+  }
+}
+
+/* Hamburger Menu Button */
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on smaller screens */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
 
   #title {
     padding: 125px;
@@ -353,6 +424,62 @@ img {
     height: 450px;
     object-fit: cover;
   }
+/* Responsive Styles */
+@media screen and (max-width: 768px) { /* Tablets and smaller devices */
+  .bio-card {
+    height: auto; /* Allow the card to expand dynamically */
+  }
+
+  .bio-card img {
+    height: 350px; /* Reduce image height */
+    margin-top: 30px; /* Adjust spacing */
+  }
+
+  .bio-card .bio-header {
+    font-size: 1.3rem; /* Adjust font size for header */
+    padding: 1rem;
+  }
+
+  .bio-card .bio-content {
+    padding: 1rem; /* Reduce padding for content */
+  }
+
+  .bio-card .bio-content p {
+    font-size: 0.9rem; /* Adjust font size for text */
+  }
+
+  .bio-card .bio-content h5 {
+    font-size: 1.8rem; /* Adjust font size for h5 */
+  }
+}
+
+@media screen and (max-width: 480px) { /* Phones */
+  .bio-card {
+    height: auto; /* Allow dynamic resizing */
+  }
+
+  .bio-card img {
+    height: 300px; /* Further reduce image height for phones */
+    margin-top: 20px;
+  }
+
+  .bio-card .bio-header {
+    font-size: 1.2rem; /* Reduce font size for header */
+    padding: 0.8rem;
+  }
+
+  .bio-card .bio-content {
+    padding: 0.8rem; /* Further reduce padding */
+  }
+
+  .bio-card .bio-content p {
+    font-size: 0.85rem; /* Further reduce font size for text */
+  }
+
+  .bio-card .bio-content h5 {
+    font-size: 1.6rem; /* Adjust font size for h5 */
+  }
+}
 
   #navbarOther{
     background-color: #b53131f8;
