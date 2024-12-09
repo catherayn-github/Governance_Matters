@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Matters</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Transparent Navbar -->
+  <nav class="transparent-navbar" id="navbarOther"> 
+    <div class="nav-wrapper container">
+      <a href="home.html" class="brand-logo"> 
+        <img src="assets/logo.png" alt="Logo" class="logo-image">
+        <span class="logo-text">Governance Matters</span>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biosketch.html" >Biographical Sketch</a></li>
+        <li class="active"><a href="thesisDetail.html">Thesis Details</a></li>
+        <li><a href="discussion.html">Discussion and Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container details-container">
+    <div class="details-header">
+        <a class="material-icons back-arrow" href="thesisDetail.html">arrow_back</a>
+        <h4>Audit Quality</h4>
+    </div>
+
+    <!-- Definition Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">info</i> Definition
+        </div>
+        <p class="details-card-text">
+            Audit quality as defined by <span class="highlight-text">Wang, (2015)</span> is a fundamental aspect of corporate governance and financial reporting credibility. It encompasses the degree to which an audit effectively evaluates and ensures the accuracy and reliability of financial statements. Audit quality is a multifaceted concept influenced by various factors, including audit tenure, auditor size, and audit fees. 
+
+        </p>
+    </div>
+
+    <!-- Measurement Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">trending_up</i> Measurement
+        </div>
+        <p class="details-card-text">
+            We measure audit quality using the following subvariables:
+
+            <ul>
+                <li><strong>Audit Tenure:</strong> Length of auditor-client engagement</li>
+                <li><strong> Auditor Size:</strong> Big 4 firms (1 = Big 4, 0 = Non-Big 4)</li>
+                <li><strong> Audit Fee: </strong> Annual fees paid to auditors</li>
+                
+            </ul>
+        </p>
+    </div>
+
+    <!-- Statement of the Problem -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">question_answer</i> Statement of the Problem #3
+        </div>
+        <p class="details-card-text">
+            <strong>What is the audit quality of listed holding companies on the Philippine Stock Exchange for the years 2017-2023 in terms of:
+            </strong>
+            <ul>
+                <li>Audit tenure;</li>
+                <li>Auditor size; and</li>
+                <li> Audit Fees?</li>
+                
+            </ul>
+        </p>
+    </div>
+
+    <!-- Line Graph Section -->
+    <div class="graph-container">
+        <div class="card">
+        <div class="card-content">
+            <span class="card-title">Audit Tenure</span>
+            <canvas id="auditTenureChart"></canvas>
+        </div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="details-table">
+        <table class="highlight centered">
+            <thead>
+                <tr>
+                    <th>Audit Size</th>
+                    <th>Frequency</th>
+                    <th>Percentage (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Not Part of Big 4</td>
+                    <td>37</td>
+                    <td>27.8 %</td>
+                </tr>
+                <tr>
+                    <td>Part of Big 4</td>
+                    <td>96</td>
+                    <td>72.2 %</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>133</td>
+                    <td>100 %</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+     <!-- Line Graph Section -->
+     <div class="graph-container">
+        <div class="card">
+        <div class="card-content">
+            <span class="card-title">Audit Fee</span>
+            <canvas id="auditFeeChart"></canvas>
+        </div>
+        </div>
+    </div>
+
+   
+
+    <div class="findings-con">
+        <h4 class="section-title">Findings of the Study</h4>
+        <ul class="collapsible expandable">
+            
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons findings-icon">history</i>
+                    Audit Tenure
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                We observe a rising trend in audit tenure from 2017 to 2023, suggesting infrequent audit firm rotations. This may be due to companies retaining preferred auditors by rotating only the lead audit partner, staying compliant with regulations like the five-year limit for lead partners while maintaining continuity. 
+                            </p>
+
+                            <p>
+                                In 2017, the shortest audit tenure was recorded, with a mean of 2.0136, likely due to management changes and the implementation of a new corporate governance code. 
+
+                            </p>
+
+                            <p>
+                                In 2022, audit tenure reached its longest point, with a mean of 2.3697, likely due to the COVID-19 pandemic’s disruptions, which led companies to prioritize stability and continuity in auditor relationships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons icon-color">business</i>
+                    Audit Size
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                We found that 96 out of 133 audit reports (72.2%) are audited by Big Four accounting firms, while 37 (27.8%) are audited by non-Big Four firms.  
+
+                            </p>
+                            <p>
+                                Agency theory suggests that the size of an audit firm impacts audit quality, as a third-party auditor is needed to resolve the conflict of interest between principals and agents. 
+
+                            </p>
+
+                            <p>Being audited by a Big Four firm signifies credibility and financial integrity, as they are known for their expertise and adherence to international standards. </p>
+
+                            <p>Despite higher costs, these firms enhance stakeholder confidence and demonstrate a commitment to governance. </p>
+
+                            <p>However, smaller firms, with their flatter structures, offer faster decision-making and more direct client interactions, as noted by Reflex Accounting (2020).</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        <!-- Audit Fee -->
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons icon-color">attach_money</i>
+                    Audit Fee
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                We observe a consistent rise in audit fees from 2017 to 2023, primarily driven by inflation, which increases operational costs like wages, office space, and technology, leading businesses to pass on these expenses. 
+
+
+                            </p>
+                            
+                            <p>
+                                The 2018 TRAIN Law, food price volatility, and peso depreciation further fueled inflation concerns. In 2023, audit fees peaked with a mean of 14.3377, influenced by both inflation and the lasting impact of the COVID-19 pandemic.
+
+                            </p>
+
+                            <p>
+                                Additionally, audit fees can increase for larger, more complex firms, requiring more resources and effort. As Shipman (2021) notes, higher fees reflect the added complexity of audits, although fee pressure can sometimes compromise auditor independence and quality.
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+  <footer class="page-footer red darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">This website showcases research findings and academic work by researchers. The primary focus is on promoting the advancement of knowledge through detailed studies and analysis.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                    <li><a class="white-text" href="home.html">Home</a></li>
+                    <li><a class="white-text" href="biosketch.html">Biographical Sketch</a></li>
+                    <li><a class="white-text" href="thesisDetail.html">Thesis Details</a></li>
+                    <li><a class="white-text" href="discussionConclusion.html">Discussion and Conclusion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 All rights reserved.
+        </div>
+    </div>
+</footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+     // Initialize collapsible
+     document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(elems, {
+                accordion: false
+            });
+        });
+
+    // Dummy Data for Line Graph
+    const atc = document.getElementById('auditTenureChart').getContext('2d');
+    const auditTenureChart = new Chart(atc, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Audit Tenure',
+          data: [2.0136, 2.1371, 2.1898, 2.1594, 2.2984, 2.3697 , 2.3544], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+               
+        }]
+      }
+    });
+
+    // Dummy Data for Line Graph
+    const afc = document.getElementById('auditFeeChart').getContext('2d');
+    const auditFeeChart = new Chart(afc, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Audit Fee',
+          data: [13.8768, 14.0006, 14.0743, 14.2189, 14.2341, 14.2818 , 14.3377], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+               
+        }]
+      }
+    });
+
+  </script>
+</body>
+</html>

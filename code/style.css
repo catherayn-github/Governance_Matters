@@ -1,0 +1,771 @@
+.hero {
+    background: url('assets/company.jpg') center/cover no-repeat;
+    height: 100vh; /* Full-screen height */
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    max-width: 100%;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 21, 21, 0.615); /* Adjust opacity as needed */
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 5.5rem;
+
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    margin: 0 10px;
+  }
+
+  .transparent-navbar {
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.351); */
+    background-color: #ff000069;
+    color: white;
+   
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: none;
+  
+  }
+
+  .transparent-navbar .brand-logo, 
+  .transparent-navbar ul li a {
+    color: white !important;
+    font-weight: 400;
+    
+  }
+
+  .transparent-navbar .brand-logo
+   {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  
+  .transparent-navbar ul li a:hover {
+   font-weight: bolder;
+   background-color:  #ff0000ca;
+  }
+
+  #title {
+    padding: 125px;
+    text-shadow: 3px 3px 5px rgba(55, 55, 55, 0.24); /* Adding text shadow for better readability */
+  
+    font-weight: bold;
+    background-color: rgba(158, 158, 158, 0.133); 
+  }
+
+  .red lighten {
+    background-color: #ff000065 !important;
+  }
+
+  .logo-image {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align the image with the navbar */
+  }
+
+  .transparent-navbar .brand-logo {
+    padding-left: 10px; /* Add spacing if needed */
+  }
+
+  .logo-text {
+    color: white; /* White text */
+    font-size: 1.5rem; /* Adjust text size */
+    font-weight: 400;
+  }
+
+  .highlight {
+    font-weight: bold;
+    color: #ff3232;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+ 
+  #main {
+    font-size: 1.5rem; /* Adjust the font size */
+    font-weight: 600;
+    color: #ff0000; /* Dark color for the title */
+    margin-bottom: 20px; /* Add space below the title */
+   
+  }
+
+  .intro
+  {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  .main-title {
+    font-size: 2rem;
+    color: #b71c1c;
+    margin-bottom: 50px;
+  }
+  .feature-card {
+    background-color: #f44336;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 250px;
+  }
+  .feature-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .feature-card p {
+    font-size: 1rem;
+  }
+  .card-content i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .row {
+    margin-top: 30px;
+  }
+
+  .code-content
+  {
+    line-height: 1.5rem;
+  }
+  .card {
+    border: none;
+  }
+
+.title-content{
+    font-weight: 500;
+}
+ /* Style for the Material Icon */
+.code.icon {
+    font-size: 3rem; /* Set the size of the icon */
+    color: #ff0000b7; /* Change the color to blue */
+    margin-right: 20px; /* Space between the icon and the title */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for effects */
+}
+
+.intro-text{
+  font-size: 1.2rem;
+}
+
+.main{
+    color: #ff0000;
+}
+
+/* Additional custom styles */
+.abstract-container {
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .abstract-container h5 {
+    font-size: 2rem;
+    color: #ff5252;
+    margin-bottom: 30px;
+  }
+  .abstract-text {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
+  }
+  .abstract-header {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  .abstract-icon {
+    font-size: 30px;
+    color: #ff5252;
+    margin-right: 15px;
+  }
+  .icon-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+ /* Hover Effect */
+ .feature-card:hover {
+    transform: translateY(-20px); /* Moves the card up slightly */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for a lifted effect */
+  }
+
+  .researcher-card {
+    margin-top: 50px;
+    border: 2px solid #f4433673;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 6px 15px rgb(255, 255, 255);
+    position: relative;
+    height: 230px;
+  }
+  .researcher-card h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f44336;
+  }
+  .researcher-card p {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .researcher-card .university {
+    font-size: 1rem;
+    color: #030101;
+    line-height: 1.3REM;
+    font-weight: lighter;
+    
+    
+  }
+
+  .researcher-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    position: absolute;
+    top: -60px; /* Moves the image half outside */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    
+  }
+  /* Hover effect for card */
+.researcher-card:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect for card image */
+.card .card-image img {
+    transform: scale(1.1); /* Slight zoom effect on image */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+/* ===BIOSKETCH STYLES=== */
+/* Unique styling for bio cards */
+.bio-container {
+    padding: 4rem 1rem;
+
+  }
+
+  .bio-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+    height: 590px;
+  }
+
+  .bio-card:hover {
+    transform: scale(1.02);
+  }
+
+  .bio-card img {
+    width: 100%;
+    padding: 5PX;
+  }
+
+  .bio-card .bio-header {
+    background-color: #6200ea; /* Purple header */
+    color: #ffffff;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .bio-card .bio-content {
+    padding: 1.5rem;
+  }
+
+  .bio-card .bio-content p {
+    font-size: 1rem;
+    color: #424242;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    padding: 10px;
+  }
+
+  .bio-card .bio-content h5 {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ff0000;
+    
+  }
+
+  /* Add slight hover effect */
+  .bio-card img {
+    margin-top: 55px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 5px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+
+  #navbarOther{
+    background-color: #b53131f8;
+  
+  }
+
+ .active a{
+    font-weight: bold !important;
+  }
+
+
+  /* === THESIS DETAIL STYLES === */
+
+  .thesisDetails-container {
+    padding: 10rem 1rem;
+  }
+  
+  /* Card styling */
+  .thesis-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 40px;
+    height: 270px !important;
+  }
+
+  .thesis-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Card Tag Styling */
+  .card-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff0000; /* Professional blue */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  /* Card Content Styling */
+  .thesis-card-content {
+    padding: 75px !important;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 270px;
+   
+  }
+  
+  /* Icons in Cards */
+  .thesis-card-icon {
+    font-size: 60px !important;
+    margin-bottom: 15px;
+    color: #ff0000; /* Matching icon color with the tag */
+  }
+  
+  /* Card Titles */
+  .card-title {
+    font-weight: 400 !important;
+    font-size: 18px;
+    font-weight: 600;
+    color: #212121; /* Darker title color */
+    margin-bottom: 10px;
+  }
+  
+  /* Card Description */
+  .thesisDetails-par{
+    font-size: 14px;
+    color: #757575; /* Lighter text color for description */
+    margin-left: 68px !important;
+  }
+
+  /* === Thesis Details Style === */
+
+.details-container {
+    padding: 5rem 1rem;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.back-arrow {
+    margin-right: 15px;
+    color: #e53935;
+    font-size: 2rem;
+}
+
+.details-card {
+    background-color: #fbfafa86;
+    border-left: 5px solid #e53935;
+    margin-bottom: 2.5rem;
+    padding: 15px;
+}
+
+.details-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #424242;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.details-card-title i {
+    margin-right: 8px;
+    color: #e53935;
+}
+
+.details-card-text {
+    font-size: 1.3rem;
+    color: #757575;
+    text-indent: 40px; 
+
+}
+
+.details-table {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.details-table th {
+    background-color: #e53935;
+    color: white;
+}
+
+/* Highlighted Text */
+.highlight-text {
+  color: #f50000; /* Red for emphasis */
+  font-weight: bold;
+}
+
+.graph-container {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.findings-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+.card-title {
+  font-size: 1.5em;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+
+.findings-card-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.findings-card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.findings-header:hover {
+  background-color: #dd2222;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.collapsible-header:hover .material-icons {
+  color: #ffffff; /* Change the icon color on hover */
+  transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #37474f;
+  text-align: center;
+}
+
+.findings-card-content p{
+  text-indent: 20px; /* Indents the first line of each paragraph */
+  margin-bottom: 15px; /* Adds spacing between paragraphs */
+}
+
+.findings-header, .findings-header i{
+  color: #dd2222;
+  
+}
+.findings-header{
+  font-weight: 600;
+}
+/* Active state - Target the li element */
+ul.collapsible > li.active > .collapsible-header {
+  background-color: #b71c1c; /* Active background */
+  color: #ffffff; /* Active text */
+  font-weight: 600;
+}
+
+/* Change icon color when active */
+ul.collapsible > li.active > .collapsible-header i {
+  color: #ffffff; /* Change icon color when active */
+}
+
+.tg-title{
+  font-weight: 400;
+  font-size: 2rem;
+  color: #7a7a7a;
+  margin-top: 5rem;
+
+}
+
+.effect-title{
+  font-size: 20px;
+  color: #7a7a7a;
+}
+
+ 
+
+
+
+
+
+
+/* Custom Section Styling */
+.custom-section {
+  padding: 4rem 0 !important;
+}
+
+.custom-section h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #b71c1c; /* Dark red */
+}
+
+.discussion-para {
+  font-size: 1/5rem !important;
+  line-height: 1.8 !important;
+  color: #333;
+  margin-bottom: 2.5rem !important; /* Adds spacing between paragraphs */
+  position: relative;
+  z-index: 1;
+  text-indent: 30px;
+}
+
+.custom-section .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #f9f9f9; /* Light gray background for cards */
+  margin-bottom: 2rem;
+}
+
+
+
+.custom-section .card:hover::before {
+  top: 0;
+}
+
+.custom-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-section .card-title {
+  font-size: 2rem !important;
+  display: flex;
+  align-items: center;
+  color: #b71c1c !important; /* Dark red for card title */
+  font-weight: bold !important;
+}
+
+.custom-section .card-title .material-icons {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #b71c1c; /* Dark red for icons */
+}
+
+.custom-section .discussion-card {
+  border: 1px solid #c62828; /* Border for discussion cards */
+}
+
+.custom-section .conclusion-card {
+  border: 1px solid #8e0000; /* Border for conclusion cards */
+}
+
+.custom-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333; /* Dark gray for text */
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.custom-section .card-action a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c62828; /* Strong red for action links */
+}
+
+.custom-section .card-action {
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+/* Add subtle glow effect on hover for action links */
+.custom-section .card-action a:hover {
+  color: #8e0000; /* Darker red on hover */
+  text-shadow: 0px 0px 5px rgba(183, 28, 28, 0.7);
+}
+
+
+/* Custom Section Styling */
+.custom-section {
+  padding: 6.5rem 0 !important;
+}
+
+.custom-section h4 {
+  font-weight: 700;
+  margin-bottom: rem;
+  letter-spacing: 1.5px;
+  color: #de2727 !important; /* Dark red */
+}
+
+.discussion-para {
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  color: #333;
+  margin-bottom: 2.5rem !important; /* Adds spacing between paragraphs */
+  position: relative;
+  z-index: 1;
+  text-indent: 30px;
+}
+
+.custom-section .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #f9f9f9; /* Light gray background for cards */
+  margin-bottom: 2rem;
+}
+
+.custom-section .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #b71c1c; /* Red background on hover */
+  color: #fff; /* White text on hover */
+}
+
+.custom-section .card-title {
+  font-size: 1.5rem;
+  align-items: end;
+  color: #b71c1c; /* Dark red for card title */
+  transition: color 0.3s ease;
+}
+
+.custom-section .card:hover .card-title {
+  color: #fff !important; /* White text for title on hover */
+}
+
+.custom-section .card-title .material-icons {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #b71c1c; /* Dark red for icons */
+  transition: color 0.3s ease;
+}
+
+.custom-section .card:hover .material-icons,
+.custom-section .card:hover span {
+  color: #fff; /* White icons on hover */
+}
+
+.custom-section .discussion-card {
+  border: 1px solid #c62828; /* Border for discussion cards */
+}
+
+.custom-section .conclusion-card {
+  border: 1px solid #8e0000; /* Border for conclusion cards */
+}
+
+
+.custom-section .card:hover p {
+  color: #fff; /* White text for paragraphs on hover */
+}
+
+.custom-section .card-action {
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+.custom-section .card-action a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c62828; /* Strong red for action links */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.custom-section .card:hover .card-action a {
+  color: #fff; /* White action links on hover */
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+}

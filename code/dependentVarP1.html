@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Matters</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Transparent Navbar -->
+  <nav class="transparent-navbar" id="navbarOther"> 
+    <div class="nav-wrapper container">
+      <a href="home.html" class="brand-logo"> 
+        <img src="assets/logo.png" alt="Logo" class="logo-image">
+        <span class="logo-text">Governance Matters</span>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biosketch.html" >Biographical Sketch</a></li>
+        <li class="active"><a href="thesisDetail.html">Thesis Details</a></li>
+        <li><a href="discussionConclusion.html">Discussion and Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container details-container">
+
+    <div class="investment-efficiency-section">
+        <div class="details-header">
+            <a class="back-arrow" href="thesisDetail.html">
+              <i class="material-icons">arrow_back</i>
+            </a>
+            <h4>Investment Efficiency</h4>
+          </div>
+  
+        <div class="row investment-grid-container">
+
+        <!-- Definition Section -->
+        <div class="col s12 m12 l12 investment-grid-item">
+            <div class="details-card">
+            <div class="details-card-title">
+                <i class="material-icons section-icon">info</i> Definition of Investment Efficiency
+            </div>
+            <p class="details-card-text">
+                Investment efficiency involves determining the optimal investment level, where any spending aimed at generating returns is considered an investment. Information asymmetry (IA) impacts investment efficiency by influencing decision-making. It allows managers to pursue investments that benefit themselves rather than aligning with the owners' interests, leading to inefficiencies due to differing information levels among stakeholders. <span class="highlight-text">(Javed, 2024)</span>
+            </p>
+            </div>
+        </div>
+
+        <!-- Measurement Section -->
+        <div class="col s12 m12 l12 investment-grid-item">
+            <div class="details-card">
+            <div class="details-card-title">
+                <i class="material-icons section-icon">trending_up</i> Measurement of Investment Efficiency
+            </div>
+            <p class="details-card-text">
+                To measure Investment Efficiency, we used <span class="highlight-text">Return on Investment (ROI)</span>, which is calculated using the formula:
+                <br>
+                <span class="highlight-text">ROI = Net Income ÷ Average Shareholder’s Equity</span>
+            </p>
+            </div>
+        </div>
+
+        <!-- Statement of the Problem Section -->
+        <div class="col s12 m12 l12 investment-grid-item">
+            <div class="details-card">
+            <div class="details-card-title">
+                <i class="material-icons section-icon">question_answer</i> Statement of the Problem #1
+            </div>
+            <p class="details-card-text">
+                <strong>What is the investment efficiency of listed holding companies on the Philippine Stock Exchange for the years 2017-2023 in terms of return on investment?
+                </strong>
+            </p>
+            </div>
+        </div>
+
+        </div> <!-- End of Row -->
+
+        <!-- Line Graph Section -->
+        <div class="graph-container">
+            <div class="card">
+            <div class="card-content">
+                <span class="card-title">Return on Investment</span>
+                <canvas id="investmentEfficiencyChart"></canvas>
+            </div>
+            </div>
+        </div>
+
+        <!-- Definition Section -->
+        <div class="col s12 m12 l12 investment-grid-item">
+            <div class="details-card">
+                
+                    <div class="col s12 m2 l1"> 
+                        <div class="details-card-title">
+                            <i class="material-icons section-icon">lightbulb_outline</i>   Findings of the Study
+                        </div>
+                    </div>
+                    <div class = "row">
+                    <div class="col s12 m2 l11"> 
+                        <p class="details-card-text">
+                            In 2019, We noticed a sharp decline in ROI, with the minimum ROI dropping to -75.47. This significantly impacted the overall mean ROI, which averaged -5.116 over the seven-year period. This dramatic downturn seemed to point to external shocks, like economic disruptions or poor investment decisions within the industry. The high standard deviation of 17.32 that year highlighted considerable variability in company performance. 
+                        </p><p class="details-card-text">After 2019, ROI figures started to stabilize, with smaller fluctuations and reduced variability, as reflected in the lower standard deviations in 2020 (0.04978) and 2022 (0.06263). Despite this stabilization, the negative mean ROI in 2023 (0.0020) suggested that challenges in investment efficiency continued. However, 2021 stood out as a year of significant improvement, with a maximum ROI of 1.97, showing that recovery through adaptive strategies was possible.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+  <footer class="page-footer red darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">This website showcases research findings and academic work by researchers. The primary focus is on promoting the advancement of knowledge through detailed studies and analysis.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                  <li><a class="white-text" href="home.html">Home</a></li>
+                  <li><a class="white-text" href="biosketch.html">Biographical Sketch</a></li>
+                  <li><a class="white-text" href="thesisDetail.html">Thesis Details</a></li>
+                  <li><a class="white-text" href="discussionConclusion.html">Discussion and Conclusion</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 All rights reserved.
+        </div>
+    </div>
+</footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    // Dummy Data for Line Graph
+    const ctx = document.getElementById('investmentEfficiencyChart').getContext('2d');
+    const investmentEfficiencyChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Return on Investment',
+          data: [0.840, 0.0216, -3.9260, .0387, .0665, .0401 , .0020], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+        }]
+      }
+    });
+
+    // Make sure to not reinitialize the chart if it's already drawn
+    if (investmentEfficiencyChart) {
+      investmentEfficiencyChart.update(); // This will update chart if needed
+    }
+  </script>
+</body>
+</html>

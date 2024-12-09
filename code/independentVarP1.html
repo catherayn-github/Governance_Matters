@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Matters</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Transparent Navbar -->
+  <nav class="transparent-navbar" id="navbarOther"> 
+    <div class="nav-wrapper container">
+      <a href="home.html" class="brand-logo"> 
+        <img src="assets/logo.png" alt="Logo" class="logo-image">
+        <span class="logo-text">Governance Matters</span>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biosketch.html" >Biographical Sketch</a></li>
+        <li class="active"><a href="thesisDetail.html">Thesis Details</a></li>
+        <li><a href="discussion.html">Discussion and Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container details-container">
+    <div class="details-header">
+        <a class="material-icons back-arrow" href="thesisDetail.html">arrow_back</a>
+        <h4>Corporate Governance</h4>
+    </div>
+
+    <!-- Definition Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">info</i> Definition
+        </div>
+        <p class="details-card-text">
+            Corporate governance is a framework of rules, practices, and procedures that steers a company’s direction and management, ensuring accountability to its stakeholders, including shareholders, employees, customers, and the community. It emphasizes oversight, risk management, and strategic decision-making, setting it apart from the daily operational tasks managed by executives. <span class="highlight-text">(IMD,
+                2024)</span>
+        </p>
+    </div>
+
+    <!-- Measurement Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">trending_up</i> Measurement
+        </div>
+        <p class="details-card-text">
+            We measure corporate governance using the following sub-variables:
+            <ul>
+                <li><strong>Ownership Concentration:</strong> Shareholders with ≥25% ownership</li>
+                <li><strong>Board Size:</strong> Total number of board of directors</li>
+                <li><strong>Board Independence:</strong> Number of independent directors</li>
+                <li><strong>Audit Committee:</strong> Number of members</li>
+            </ul>
+        </p>
+    </div>
+
+    <!-- Statement of the Problem -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">question_answer</i> Statement of the Problem #2
+        </div>
+        <p class="details-card-text">
+            <strong>What is the corporate governance of listed holding companies on the Philippine Stock Exchange
+                for the years 2017-2023 in terms of:</strong>
+            <ul>
+                <li>Ownership concentration;</li>
+                <li>Board size;</li>
+                <li>Board independence; and</li>
+                <li>Number of audit committee members?</li>
+            </ul>
+        </p>
+    </div>
+
+    <h4 class="details-header">Graphs and Table</h4>
+
+    <!-- Line Graph Section -->
+    <div class="graph-container">
+        <div class="card">
+        <div class="card-content">
+            <span class="card-title">Ownership Concentration</span>
+            <canvas id="ownershipConcentrationChart"></canvas>
+        </div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="details-table">
+        <table class="highlight centered">
+            <thead>
+                <tr>
+                    <th>Board Size</th>
+                    <th>Frequency</th>
+                    <th>Percentage (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6-10</td>
+                    <td>93</td>
+                    <td>69.9%</td>
+                </tr>
+                <tr>
+                    <td>11-15</td>
+                    <td>40</td>
+                    <td>30.1%</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>133</td>
+                    <td>100%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+     <!-- Line Graph Section -->
+     <div class="graph-container">
+        <div class="card">
+        <div class="card-content">
+            <span class="card-title">Board Independence</span>
+            <canvas id="boardIndependenceChart"></canvas>
+        </div>
+        </div>
+    </div>
+
+     <!-- Line Graph Section -->
+     <div class="graph-container">
+        <div class="card">
+        <div class="card-content">
+            <span class="card-title">Audit Committee Members</span>
+            <canvas id="auditCommitteeMembersChart"></canvas>
+        </div>
+        </div>
+    </div>
+
+    <div class="findings-con">
+        <h4 class="details-header">Findings of the Study</h4>
+        <ul class="collapsible expandable">
+            <!-- Ownership Concentration -->
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons findings-icon">trending_up</i>
+                    Ownership Concentration
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                The graph shows key trends in ownership concentration: a peak in 2018, a dip in 2019, recovery in 2020, and steady growth through 2023, indicating overall stability despite fluctuations. We see these shifts influenced by factors like policy changes, market dynamics, and economic conditions, offering insights into corporate governance and market behavior. 
+                            </p>
+
+                            <p>
+                                In 2017-2018, rising ownership concentration aligned with domestic consumption growth, supported by remittance inflows, favorable inflation, improved employment, and the TRAIN law. The 2019 decline reflected global risks impacting corporate ownership, while the 2020 dip mirrored COVID-19’s economic fallout.
+                            </p>
+
+                            <p>
+                                By 2021, ownership concentration increased, driven by strong performances from major corporations like San Miguel Corporation. 
+                            </p>
+
+                            <p>
+                                From 2021 to 2023, we observed rising ownership concentration as holding firms capitalized on growth opportunities through market expansion, infrastructure investments, and favorable economic conditions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Board Size -->
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons icon-color">group</i>
+                    Board Size
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                From the 133 disclosures we reviewed, 93 (69.9%) showed that companies typically have boards with 6 to 10 members, while 40 (30.1%) reported boards of 11 to 15 members. 
+
+                            </p>
+                            <p>
+                                This supports the trend of most companies maintaining smaller boards, which aligns with the Code’s principles. Smaller, more manageable boards enable active participation, effective decision-making, and compliance with governance requirements, including independent directors and committee structures.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Board Independence -->
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons icon-color">account_balance</i>
+                    Board Independence
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                We observed a steady increase in board independence among listed holding companies from 2017 to 2023, reflecting our efforts to align with PSE and SEC corporate governance standards. 
+
+                            </p>
+                            
+                            <p>
+                                Board independence peaked in 2023 with a mean of 1.0546 (SD: 0.31059), while 2017 recorded the lowest mean at 0.9059 (SD: 0.36572). The seven-year average was 0.9837 (SD: 0.31091), highlighting our progress in strengthening governance practices. 
+
+                            </p>
+
+                            <p>
+                                The rise in 2017-2018 aligns with Corporate Governance guidelines, which recommend at least three independent directors or 30% board representation. 
+
+                            </p>
+
+                            <p>
+                                This trend was also supported by strong stock market performance in 2017, reflecting growing investor confidence and the demand for better governance. 
+
+
+                            </p>
+                            
+                            <p>
+                                However, in 2022, we saw a decline in independent directors as companies focused on survival rather than governance reforms due to the COVID-19 pandemic.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <!-- Audit Committee Members -->
+            <li>
+                <div class="collapsible-header findings-header">
+                    <i class="material-icons icon-color">assessment</i>
+                    Audit Committee Members
+                </div>
+                <div class="collapsible-body">
+                    <div class="findings-card">
+                        <div class="findings-card-content">
+                            <p>
+                                The graph shows a gradual increase in the average number of audit committee members from 2017 to 2023. 
+                            </p>
+
+                            <p>
+                                From 2017 to 2019, we observed that the average remained stable at around 1.27 members, then rose slightly to 1.28 in 2020, reflecting our efforts to strengthen audit committees. 
+                            </p>
+
+                            <p>In 2021, there was a temporary dip, likely due to challenges from the COVID-19 pandemic, followed by a sharp rise, peaking at 1.31 in 2023. </p> 
+                            
+                            <p>We believe the decline in 2021 was due to pandemic-related pressures, such as increased workloads, resource constraints, and personal challenges faced by committee members. </p>
+
+                            <p>On the other hand, the overall upward trend aligns with regulatory standards like the Sarbanes-Oxley Act, highlighting the importance of independent and well-structured audit committees for improved financial transparency and governance.</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+  <footer class="page-footer red darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">This website showcases research findings and academic work by researchers. The primary focus is on promoting the advancement of knowledge through detailed studies and analysis.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                    <li><a class="white-text" href="home.html">Home</a></li>
+                    <li><a class="white-text" href="biosketch.html">Biographical Sketch</a></li>
+                    <li><a class="white-text" href="thesisDetail.html">Thesis Details</a></li>
+                    <li><a class="white-text" href="discussionConclusion.html">Discussion and Conclusion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 All rights reserved.
+        </div>
+    </div>
+</footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+     // Initialize collapsible
+     document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.collapsible');
+            M.Collapsible.init(elems, {
+                accordion: false
+            });
+        });
+    // Dummy Data for Line Graph
+    const ctx = document.getElementById('ownershipConcentrationChart').getContext('2d');
+    const ownershipConcentrationChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Ownership Concentration',
+          data: [.6689, .6809, .6610, .6408, .6754, .6729 , .6804], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+        }]
+      }
+    });
+
+    // Dummy Data for Line Graph
+    const occ = document.getElementById('boardIndependenceChart').getContext('2d');
+    const boardIndependenceChart = new Chart(occ, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Board Independence',
+          data: [.9059, .9637, .9850, .9884, 1.0153, .9733 , 1.0546], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+               
+        }]
+      }
+    });
+
+    // Dummy Data for Line Graph
+    const acmc = document.getElementById('auditCommitteeMembersChart').getContext('2d');
+    const auditCommitteeMembersChart = new Chart(acmc, {
+      type: 'line',
+      data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+          label: 'Audit Committee Members',
+          data: [.9059, .9637, .9850, .9884, 1.0153, .9733 , 1.0546], // Dummy Data
+          borderColor: '#f50000',
+          backgroundColor: '#f50000',
+          borderWidth: 2,
+          pointBackgroundColor: '#f50000',
+          pointBorderColor: '#fff',
+          pointRadius: 6,
+          pointHoverRadius: 10, // Larger radius on hover
+          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)', // Highlight point
+          pointHoverBorderColor: '#000',
+        }]
+      }
+    });
+
+
+  
+  </script>
+</body>
+</html>

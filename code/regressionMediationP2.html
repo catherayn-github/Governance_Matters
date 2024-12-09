@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Matters</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Transparent Navbar -->
+  <nav class="transparent-navbar" id="navbarOther"> 
+    <div class="nav-wrapper container">
+        <a href="home.html" class="brand-logo"> 
+            <img src="assets/logo.png" alt="Logo" class="logo-image">
+            <span class="logo-text">Governance Matters</span>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="biosketch.html" >Biographical Sketch</a></li>
+            <li class="active"><a href="thesisDetail.html">Thesis Details</a></li>
+            <li><a href="discussion.html">Discussion and Conclusion</a></li>
+          </ul>
+    </div>
+  </nav>
+  <div class="container details-container">
+    <div class="details-header">
+        <a class="material-icons back-arrow" href="thesisDetail.html">arrow_back</a>
+        <h4>Effect of Audit Quality on Investment Efficiency</h4>
+    </div>
+
+    <!-- Definition Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">info</i> Importance
+        </div>
+        <p class="details-card-text">
+            Understanding the impact of audit quality on investment efficiency in holding firms in the Philippines is essential for several reasons. As investors or decision-makers, we rely on accurate and trustworthy financial information. The quality of audits directly affects the reliability of financial statements, influencing our investment choices. High audit quality ensures that a firm’s financial position is accurately represented, leading to better investment decisions. Investment efficiency is crucial for maximizing returns, and poor financial reporting can lead to suboptimal investment choices, affecting returns. 
+
+        </p>
+        <P class="details-card-text">
+            By understanding how audit quality impacts these decisions, we can better assess risk and return potential. In the Philippines, where local regulations and economic factors play a role, strong audits can help mitigate these risks. Poor audits may result in inefficiencies, misallocation of resources, or even fraud, which can harm both firms and the market. By exploring this relationship, we can advocate for stronger audits, fostering a more transparent financial environment and enabling more effective investment decisions.
+
+        </P>
+    </div>
+
+    <!-- Measurement Section -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">trending_up</i> Measurement
+        </div>
+        <p class="details-card-text">
+            Our study used simple linear regression to test the effect of audit quality on investment efficiency.
+        </p>
+    </div>
+
+    <!-- Statement of the Problem -->
+    <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">question_answer</i> Statement of the Problem #5
+        </div>
+        <p class="details-card-text">
+            Does Audit Quality significantly affect Investment Efficiency? 
+        </p>
+    </div>
+
+     <!-- Hyphotesis -->
+     <div class="details-card ">
+        <div class="details-card-title">
+            <i class="material-icons">help_outline</i> Hypothesis
+        </div>
+        <p class="details-card-text">
+            Audit Quality has no significant effect on Investment Efficiency.
+            
+        </p>
+    </div>
+
+
+    <!-- Table Section -->
+    <div class="details-table">
+        <h4 class="tg-title"> a.  Effect of Corporate Governance to Audit Quality Through Audit Tenure </h4>
+        <table class="highlight centered">
+            <thead>
+                <tr>
+                    <th>Organizational Performance</th>
+                    <th>B</th>
+                    <th>Std. Error</th>
+                    <th>t-value</th>
+                    <th>p-value</th>
+                    <th>Decision on Ho</th>
+                    <th>Interpretation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Constant</td>
+                    <td>-.362</td>
+                    <td>.249</td>
+                    <td>-1.455</td>
+                    <td>.148</td>
+                    <td>Failed to reject</td>
+                    <td>Not Significant</td>
+                </tr>
+                <tr>
+                    <td>Ownership Concentration</td>
+                    <td>.270</td>
+                    <td>.158</td>
+                    <td>1.712</td>
+                    <td>.089</td>
+                    <td>Failed to reject</td>
+                    <td>Not Significant</td>
+                </tr>
+                <tr>
+                    <td>Board Size</td>
+                    <td>-.288</td>
+                    <td>.090</td>
+                    <td>-3.193</td>
+                    <td>.002</td>
+                    <td>Reject</td>
+                    <td>Significant</td>
+                </tr>
+                <tr>
+                    <td>Board Independence</td>
+                    <td>.808</td>
+                    <td>.127</td>
+                    <td>6.342</td>
+                    <td>&lt;.001</td>
+                    <td>Reject</td>
+                    <td>Significant</td>
+                </tr>
+                <tr>
+                    <td>Audit Committee Member</td>
+                    <td>.603</td>
+                    <td>.133</td>
+                    <td>4.521</td>
+                    <td>&lt;.001</td>
+                    <td>Reject</td>
+                    <td>Significant</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Definition Section -->
+    <div class="col s12 m12 l12 investment-grid-item">
+        <div class="details-card">
+            
+                <div class="col s12 m2 l1"> 
+                    <div class="details-card-title">
+                        <i class="material-icons section-icon">lightbulb_outline</i>   Findings of the Study
+                    </div>
+                </div>
+                <div class = "row">
+                <div class="col s12 m2 l11"> 
+                    <p class="details-card-text">
+                        Our findings show that audit quality, measured by audit tenure, size, and fee, does not significantly affect investment efficiency, as all 
+                        <strong>p-values</strong> exceed the 0.05 threshold. Mediation analysis also reveals no significant indirect effects.
+                    </p>
+                    
+                    <p class="details-card-text">
+                        Prior research, such as Siregar & Nuryanah (2019), supports this, showing a negative association between financial reporting quality 
+                        and investment efficiency in underinvestment cases due to stakeholder skepticism. Further analysis reveals no significant results for overinvestment, while underinvestment shows a negative relationship with audit quality.
+                    </p>
+                    
+                    <p class="details-card-text">
+                        Studies like Buobaker et al. (2018) highlight that audit quality’s impact may depend on firm growth, benefiting high-growth firms but not necessarily improving investment efficiency for all.
+                    </p>
+                    
+                    <p class="details-card-text">
+                        Overall, our results suggest that audit quality is not a key determinant of investment efficiency, pointing to the need to explore other factors that drive investment performance.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="center-align">
+        <ul class="pagination">
+        <li ><a href="regressionMediationP1.html"><i class="material-icons">chevron_left</i></a></li>
+        <li><a href="regressionMediationP1.html">1</a></li>
+        <li  class="active"><a href="regressionMediationP2.html">2</a></li>
+        
+        <li><a href="regressionMediationP3.html">3</a></li>
+        <li ><a href="regressionMediationP3.html"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </div>
+
+
+     
+    
+</div>
+
+  <footer class="page-footer red darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">This website showcases research findings and academic work by researchers. The primary focus is on promoting the advancement of knowledge through detailed studies and analysis.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                    <li><a class="white-text" href="home.html">Home</a></li>
+                    <li><a class="white-text" href="biosketch.html">Biographical Sketch</a></li>
+                    <li><a class="white-text" href="thesisDetail.html">Thesis Details</a></li>
+                    <li><a class="white-text" href="discussionConclusion.html">Discussion and Conclusion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 All rights reserved.
+        </div>
+    </div>
+</footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

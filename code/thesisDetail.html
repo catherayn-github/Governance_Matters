@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Governance Matters</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Transparent Navbar -->
+   <nav class="transparent-navbar" id="navbarOther"> 
+    <div class="nav-wrapper container">
+      <a href="home.html" class="brand-logo"> 
+        <img src="assets/logo.png" alt="Logo" class="logo-image">
+        <span class="logo-text">Governance Matters</span>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="biosketch.html" >Biographical Sketch</a></li>
+        <li class="active"><a href="thesisDetail.html">Thesis Details</a></li>
+        <li><a href="discussionConclusion.html">Discussion and Conclusion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="thesisDetails-container container">
+    <div class="row thesis-con">
+        <!-- Card 3 -->
+      <div class="col s12 m6 l6">
+        <div class="card thesis-card" onclick="navigateToPage('dependentVarP1.html')">
+          <span class="card-tag"> Dependent Variable</span>
+          <div class="card-content thesis-card-content">
+            <i class="material-icons thesis-card-icon">bar_chart</i>
+            <span class="card-title"> Investment Efficiency</span>
+            
+          </div>
+        </div>
+      </div>
+    
+        <!-- Card 2 -->
+        <div class="col s12 m6 l6">
+            <div class="card thesis-card" onclick="navigateToPage('independentVarP1.html')">
+              <span class="card-tag">Independent Variable</span>
+              <div class="card-content thesis-card-content">
+                <i class="material-icons thesis-card-icon">business</i>
+                <span class="card-title"> Corporate Governance</span>
+               
+              </div>
+            </div>
+          </div>
+
+
+      <!-- Card 1 -->
+    <div class="col s12 m6 l6">
+
+        
+       
+        <div class="card thesis-card" onclick="navigateToPage('mediatingVar.html')">
+          <span class="card-tag">Mediating Variable</span>
+          <div class="card-content thesis-card-content">
+            <i class="material-icons thesis-card-icon">assignment</i>
+            <span class="card-title">Audit Quality</span>
+          
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col s12 m6 l6">
+        <div class="card thesis-card" onclick="navigateToPage('regressionMediationP1.html')">
+          <span class="card-tag">Effects</span>
+          <div class="card-content thesis-card-content">
+            <i class="material-icons thesis-card-icon">insights</i>
+            <span class="card-title">Regression and Mediation Analysis</span>
+            
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+  <footer class="page-footer red darken-2">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <p class="grey-text text-lighten-4">This website showcases research findings and academic work by researchers. The primary focus is on promoting the advancement of knowledge through detailed studies and analysis.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Quick Links</h5>
+                <ul>
+                    <li><a class="white-text" href="home.html">Home</a></li>
+                    <li><a class="white-text" href="biosketch.html">Biographical Sketch</a></li>
+                    <li><a class="white-text" href="thesisDetail.html">Thesis Details</a></li>
+                    <li><a class="white-text" href="discussionConclusion.html">Discussion and Conclusion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2024 All rights reserved.
+        </div>
+    </div>
+</footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    // Function to navigate to specific pages
+    function navigateToPage(page) {
+      window.location.href = page; // Update with actual page URLs
+    }
+  </script>
+</body>
+</html>
