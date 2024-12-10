@@ -47,7 +47,7 @@ img {
   #mobile-menu li a:active,
   #mobile-menu li a:hover{
     font-weight: 600 ; /* Make it bold */
-    color: #ffffff; /* Text color for selected item */
+    color: #ffffff !important; /* Text color for selected item */
     background: #ff0000 !important; /* Background color for selected item */
     border-radius: 5px; /* Optional styling */
     transition: background-color 0.3s ease; /* Smooth transition */
