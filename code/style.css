@@ -170,7 +170,7 @@ img {
 }
 /* Adjust the top margin of the sidenav */
 .sidenav {
-  margin-top: 64px; /* Adjust this value to match your navbar height */
+  margin-top: 62px; /* Adjust this value to match your navbar height */
 }
 
 /* Hamburger Menu Button */
